@@ -1,0 +1,31 @@
+body{
+    background-color:rgb(223, 53, 223);
+    color: mediumvioletred;
+    border: solid;
+}  
+
+h1 {
+    color: navy;
+    font-family: sans-serif;
+}
+
+img {
+    color: teal;
+    border: solid;
+    height: 350px;
+    width: 300px;
+}
+
+h3 {
+    color: darkviolet;
+}
+
+#button_next{
+    background-color: DarkTurquoise;
+    font-weight: bold;
+    color:  goldenrod;
+    font-size: 15px;
+    height: 20px;
+    width: 50px;
+}
+  

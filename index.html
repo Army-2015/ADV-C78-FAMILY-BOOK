@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>ADV C-78: My Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="text-align:center">
+        <h1>My Family Book</h1>
+        <img id="img_of_the_member" src="">
+        <h3 id="name_of_the_member"></h3>
+        <button id="button_next" onclick="function_next()">Next</button>
+        <script>
+            var images
+            [
+                "https://thumbs.dreamstime.com/z/grandfather-portrait-old-man-wearing-glasses-grey-hair-mustache-wearing-sweater-cartoon-grandpa-senior-man-standing-vector-86364474.jpg",
+                "https://thumbs.dreamstime.com/z/african-american-father-daughter-piggyback-handsome-young-his-ride-smiling-happy-together-53361442.jpg",
+                "https://thumbs.dreamstime.com/z/mother-two-daughters-illustration-drawn-watercolor-colored-pencils-family-moments-s-day-198232169.jpg",
+                "https://i.pinimg.com/originals/9f/38/1b/9f381b75988f8f7da10284d0f1314424.jpg",
+                "https://img.favpng.com/11/6/8/the-boss-baby-image-illustration-film-dreamworks-animation-png-favpng-DT6RJemx1k3LLU8HfuEpvL0E1.jpg",
+                "https://t3.ftcdn.net/jpg/02/74/86/30/360_F_274863032_xgwvNFF0u9vZAGPmtvCRHdGxIeeDLAb9.jpg",
+                "https://i.pinimg.com/originals/b4/a6/a1/b4a6a1c22c069c6e83734049d64f5d7f.jpg",
+            ]
+            var names
+            [
+                "Grandpa",
+                " Father",
+                " Mother",
+                " Sister",
+                " Brother",
+                " Grandma",
+                " Me!",
+            ]
+        var i=0
+        function function_next() 
+        {
+         i++ ;
+          var no_of_total_numbers_array= 6;
+         if (i > no_of_total_numbers_array)
+         {
+            i = 0
+         };
+        
+        var next_img= images[i]
+        var next_name= names[i]
+        document.getElementById("img_of_the_member").src= next_img;
+        document.getElementById("name_of_the_member").src= next_name; 
+        }
+        </script>
+    </body>
+</html>
